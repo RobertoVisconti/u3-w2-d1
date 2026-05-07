@@ -32,6 +32,7 @@ class CommentArea extends Component {
       } else {
         this.setState({ isLoading: false, isError: true });
       }
+      // eslint-disable-next-line no-unused-vars
     } catch (error) {
       this.setState({ isLoading: false, isError: true });
     }
@@ -120,6 +121,7 @@ class CommentArea extends Component {
             <ListGroup.Item
               key={c._id}
               className="d-flex justify-content-between align-items-center"
+              data-testid="single-comment"
             >
               <div>
                 <strong>{c.rate}/5</strong> - {c.comment}

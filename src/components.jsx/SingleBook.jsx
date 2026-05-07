@@ -14,6 +14,7 @@ class SingleBook extends Component {
           cursor: "pointer",
         }}
         onClick={() => changeSelectedAsin(book.asin)}
+        data-testid="books"
       >
         <Card.Img
           variant="top"
